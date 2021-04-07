@@ -12,7 +12,7 @@ let turn = 0;
 context.translate(innerWidth / 2, innerHeight / 2);
 
 const drawn = () => {
-    
+  requestAnimationFrame(drawn);
 
   context.beginPath();
   context.strokeStyle = 'purple';
