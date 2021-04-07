@@ -20,7 +20,7 @@ const drawn = () => {
   context.stroke();
 
   context.rotate((Math.PI / 180) * 30);
-  turn += 30;
+  turn += 15;
 
   if (turn > 7200) {
     return;
