@@ -18,6 +18,18 @@ const drawn = () => {
   context.strokeStyle = 'purple';
   context.arc(x, y, 100, 0, 2 * Math.PI);
   context.stroke();
+
+  context.rotate((Math.PI / 180) * 30);
+  turn += 30;
+
+  if (turn > 7200) {
+    return;
+  }
+  //end of complete turn
+  if (turn % 360 === 0) {
+    x += 10;
+    y += 10;
+  }
 };
 
 drawn();
